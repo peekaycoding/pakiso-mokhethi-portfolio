@@ -6,6 +6,29 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Terms & Conditions modal on the contact page
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('termsModal');
+    const openButton = document.getElementById('openTerms');
+    if (!modal || !openButton || typeof modal.showModal !== 'function') return;
+
+    const checkbox = document.getElementById('terms');
+    const close = () => modal.close();
+
+    openButton.addEventListener('click', () => modal.showModal());
+    document.getElementById('closeTerms').addEventListener('click', close);
+    document.getElementById('dismissTerms').addEventListener('click', close);
+    document.getElementById('acceptTerms').addEventListener('click', () => {
+        if (checkbox) checkbox.checked = true;
+        close();
+    });
+
+    // Clicking the dark backdrop outside the modal closes it
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) close();
+    });
+});
+
 // Mobile Navigation Toggle with Error Handling
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');

@@ -1094,6 +1094,12 @@ body {
     color: var(--text-light);
 }
 
+/* Phone number stays tappable but looks like the other contact details */
+.contact-text a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .contact-form-container {
     background: var(--bg-card);
     padding: 2rem;
@@ -1137,6 +1143,150 @@ body {
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 0 3px rgba(234, 88, 12, 0.1);
+}
+
+/* Terms consent checkbox */
+.form-group.form-consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+}
+
+.form-group.form-consent input {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    margin-top: 0.2rem;
+    padding: 0;
+    accent-color: var(--primary-color);
+    cursor: pointer;
+}
+
+.form-group.form-consent label {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 0.925rem;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+.form-consent a {
+    color: var(--primary-color);
+}
+
+/* Terms & Conditions modal */
+.link-button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: var(--primary-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.terms-modal {
+    width: min(720px, calc(100% - 32px));
+    max-height: calc(100vh - 64px);
+    margin: auto;
+    padding: 0;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background: var(--bg-card);
+    color: var(--text-light);
+    box-shadow: var(--shadow-lg);
+    overflow: hidden;
+}
+
+.terms-modal[open] {
+    display: flex;
+    flex-direction: column;
+}
+
+.terms-modal::backdrop {
+    background: rgba(2, 6, 23, 0.75);
+}
+
+.terms-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem 1.75rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.terms-modal-header h2 {
+    font-size: 1.5rem;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+}
+
+.legal-updated {
+    color: var(--secondary-color);
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.terms-modal-close {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.75rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+.terms-modal-close:hover {
+    color: var(--primary-color);
+}
+
+.terms-modal-body {
+    overflow-y: auto;
+    padding: 0.5rem 1.75rem 1.5rem;
+}
+
+.legal-content h3 {
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    margin: 1.5rem 0 0.5rem;
+}
+
+.legal-content p,
+.legal-content li {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+.legal-content p {
+    margin-bottom: 0.75rem;
+}
+
+.legal-content ul {
+    padding-left: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.legal-content a {
+    color: var(--primary-color);
+}
+
+.terms-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    padding: 1rem 1.75rem;
+    border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 768px) {
+    .terms-modal-header,
+    .terms-modal-body,
+    .terms-modal-footer {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
 }
 
 .availability-section {
