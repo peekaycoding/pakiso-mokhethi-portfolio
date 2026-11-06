@@ -906,6 +906,9 @@ body {
 
 .project-links {
     margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
 }
 
 .technical-experience {
