@@ -858,6 +858,16 @@ body {
     object-fit: cover;
 }
 
+/* Work experience: picture on top, bullets underneath */
+.work-role .project-content {
+    grid-template-columns: 1fr;
+}
+
+.project-image.role-image {
+    max-width: 560px;
+    margin: 0 auto;
+}
+
 /* Real images inside project-image */
 .project-image img {
     width: 100%;
