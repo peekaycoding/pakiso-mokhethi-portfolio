@@ -852,6 +852,12 @@ body {
     padding: 1rem;
 }
 
+/* Work experience: office picture in the same padded frame as the
+   project screenshots, cropped to fit rather than stretched */
+.project-image.role-image img {
+    object-fit: cover;
+}
+
 /* Real images inside project-image */
 .project-image img {
     width: 100%;
@@ -960,7 +966,6 @@ body {
     scroll-margin-top: 90px;
 }
 
-.work-role .project-content,
 .text-only .project-content {
     grid-template-columns: 1fr;
 }
