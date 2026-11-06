@@ -51,7 +51,7 @@
                         <div class="project-details">
                             <ul>
                                 <li><strong>Led a three-engineer team</strong> building a business-development CRM: split the work, reviewed pull requests, and owned the backend, infrastructure and AWS environment. The team worked to a protected <code>main</code> branch with code-owner reviews and GitHub Actions CI, including container vulnerability scanning and SBOM generation.</li>
-                                <li><strong>Backend engineer on an enterprise legal case-management platform</strong> (Java 21, Spring Boot, Spring Modulith) in a five-person team: built the matter intake, 20-stage lifecycle state machine, activity timeline and allocation modules, plus the financial provisioning and invoice modules, with role-based separation of duties, multi-tenant row-level security and Testcontainers integration tests.</li>
+                                <li><strong>Backend engineer on an enterprise legal case-management platform</strong> (Java 21, Spring Boot, Spring Modulith) in a five-person team: built the intake, 20-stage lifecycle state machine, activity timeline and allocation modules, plus the financial provisioning and invoice modules, with role-based separation of duties, multi-tenant row-level security and Testcontainers integration tests.</li>
                                 <li><strong>Main developer of a staff engagement platform</strong> used live by employees at a company convention: leaderboard, quizzes, a QR-code scavenger hunt, an awards ballot with Excel/PowerPoint reporting, a timed team escape-room game with a live scoreboard, and a feedback survey with autosave.</li>
                                 <li><strong>Deployed and operated systems on AWS</strong> (EC2, S3, SSM) with Docker Compose, Terraform, Caddy/HTTPS and custom-domain DNS, including the AWS deployment of a compliance application pilot. Designed for flat monthly cost, with budget alerts and automated database backups verified by a restore drill.</li>
                                 <li><strong>Built secure authentication and access control:</strong> email one-time-passcode sign-in, Redis-backed sessions, rate limiting, role-based access and PostgreSQL row-level security for tenant isolation. Ran security reviews and fixed the findings before release.</li>
@@ -112,23 +112,23 @@
                 <div class="project-featured">
                     <div class="project-header">
                         <div>
-                            <h2>Case Management Platform: Enterprise Legal Case Management</h2>
+                            <h2>Enterprise Legal Case Management</h2>
                             <p class="role-company">Work project · Backend Engineer</p>
                         </div>
                         <span class="project-date">Jul – Sep 2026</span>
                     </div>
                     <div class="project-content">
                         <div class="project-image">
-                            <div class="placeholder-image">Case Management Platform</div>
+                            <div class="placeholder-image">Enterprise Legal Case Management</div>
                         </div>
                         <div class="project-details">
                             <h3>Project Overview</h3>
-                            <p>A multi-tenant platform for managing an enterprise legal department's matters, from intake and allocation to law-firm invoices and legal-cost provisioning. Built by a five-person team; I owned the Matter and Financial backend modules.</p>
+                            <p>A multi-tenant enterprise platform that takes work items from intake and allocation through to invoicing and cost provisioning. Built by a five-person team; I owned two of its backend modules: the core workflow and the financial module.</p>
                             <h3>Key Achievements</h3>
                             <ul>
-                                <li>Matter intake and lifecycle: a 20-stage state machine with branching transitions, matter creation and submission, and an append-only activity timeline</li>
-                                <li>Matter allocation: allocating matters to advisors, conflict checks, and accept/decline flows</li>
-                                <li>Financial modules: provisioning cycles and records (legal-cost exposure and computed provision), and the invoice submit → review → payment lifecycle</li>
+                                <li>Intake and lifecycle: a 20-stage state machine with branching transitions, item creation and submission, and an append-only activity timeline</li>
+                                <li>Allocation: assigning items to reviewers, conflict checks, and accept/decline flows</li>
+                                <li>Financial modules: provisioning cycles and records (cost exposure and computed provision), and the invoice submit → review → payment lifecycle</li>
                                 <li>Security: Keycloak / OAuth2 JWT authentication, tenant context taken from the verified token, and role-based access with separation of duties (the person who prepares a financial record can't also approve it)</li>
                                 <li>Data layer: PostgreSQL row-level security for tenant isolation, JPA, and Flyway migrations</li>
                                 <li>Architecture and testing: a modular monolith with Spring Modulith (enforced module boundaries), Testcontainers integration tests (including tenant-isolation tests), and HTTP-layer controller tests</li>
