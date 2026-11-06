@@ -1,3 +1,11 @@
+// Keep the footer copyright year current
+document.addEventListener('DOMContentLoaded', function() {
+    const year = new Date().getFullYear();
+    document.querySelectorAll('.current-year').forEach(el => {
+        el.textContent = year;
+    });
+});
+
 // Mobile Navigation Toggle with Error Handling
 document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');

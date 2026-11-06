@@ -15,7 +15,6 @@
             </div>
             <ul class="nav-menu">
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
                 <li class="nav-item"><a href="skills.html" class="nav-link">Skills</a></li>
                 <li class="nav-item"><a href="education.html" class="nav-link">Education</a></li>
                 <li class="nav-item"><a href="experience.html" class="nav-link active">Experience</a></li>
@@ -31,37 +30,226 @@
 
     <section class="page-header">
         <div class="container">
-            <h1>Projects & Experience</h1>
-            <p class="page-subtitle">Hands-on projects demonstrating technical skills and problem-solving abilities</p>
+            <h1>Experience & Projects</h1>
+            <p class="page-subtitle">Professional software engineering work and the projects behind it</p>
         </div>
     </section>
 
     <section class="experience-section">
         <div class="container">
+            <h2 class="section-heading" id="work-experience">Work Experience</h2>
+            <div class="projects-showcase">
+                <div class="project-featured work-role">
+                    <div class="project-header">
+                        <div>
+                            <h2>Software Engineer</h2>
+                            <p class="role-company">Motsoeneng Bill · Johannesburg</p>
+                        </div>
+                        <span class="project-date">Jul 2026 – Present</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-details">
+                            <ul>
+                                <li><strong>Led a three-engineer team</strong> building a business-development CRM: split the work, reviewed pull requests, and owned the backend, infrastructure and AWS environment. The team worked to a protected <code>main</code> branch with code-owner reviews and GitHub Actions CI, including container vulnerability scanning and SBOM generation.</li>
+                                <li><strong>Backend engineer on an enterprise legal case-management platform</strong> (Java 21, Spring Boot, Spring Modulith) in a five-person team: built the matter intake, 20-stage lifecycle state machine, activity timeline and allocation modules, plus the financial provisioning and invoice modules, with role-based separation of duties, multi-tenant row-level security and Testcontainers integration tests.</li>
+                                <li><strong>Main developer of a staff engagement platform</strong> used live by employees at a company convention: leaderboard, quizzes, a QR-code scavenger hunt, an awards ballot with Excel/PowerPoint reporting, a timed team escape-room game with a live scoreboard, and a feedback survey with autosave.</li>
+                                <li><strong>Deployed and operated systems on AWS</strong> (EC2, S3, SSM) with Docker Compose, Terraform, Caddy/HTTPS and custom-domain DNS, including the AWS deployment of a compliance application pilot. Designed for flat monthly cost, with budget alerts and automated database backups verified by a restore drill.</li>
+                                <li><strong>Built secure authentication and access control:</strong> email one-time-passcode sign-in, Redis-backed sessions, rate limiting, role-based access and PostgreSQL row-level security for tenant isolation. Ran security reviews and fixed the findings before release.</li>
+                                <li><strong>Implemented data-protection compliance (POPIA):</strong> personal-data export and erasure, automated retention, and incident-response runbooks.</li>
+                                <li><strong>Use AI coding assistants</strong> day to day as a pair programmer: I own the design decisions, review and test every change, and verify it in a local environment before deployment.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-heading" id="projects">Projects</h2>
             <div class="projects-showcase">
                 <div class="project-featured">
                     <div class="project-header">
-                        <h2>Antonio Artworks - Full-Stack E-Commerce Platform</h2>
+                        <div>
+                            <h2>Business-Development CRM</h2>
+                            <p class="role-company">Work project · Team Lead</p>
+                        </div>
+                        <span class="project-date">Oct – Nov 2026</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-image">
+                            <div class="placeholder-image">Business-Development CRM</div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Project Overview</h3>
+                            <p>A web CRM for a business-development team. It tracks prospective clients through a pipeline, scores how likely each is to convert, highlights accounts that need follow-up, and gives executives performance and risk dashboards.</p>
+                            <h3>Key Achievements</h3>
+                            <ul>
+                                <li>Led three engineers alongside a UI/UX designer, through to production release</li>
+                                <li>Node.js/Express backend; framework-free JavaScript frontend, installable as a PWA</li>
+                                <li>PostgreSQL row-level security for multi-tenant isolation; Redis for sessions and rate limiting</li>
+                                <li>AWS infrastructure defined in Terraform, with remote state and locking, budget alerts and secrets in SSM; a backup restore drill completed</li>
+                                <li>CI with GitHub Actions, Trivy vulnerability scanning and SBOM generation</li>
+                                <li>Data import from the previous platform; exports to Excel, CSV, JSON, PDF and XML, protected against spreadsheet formula injection</li>
+                                <li>POPIA tooling: data export and erasure, retention purges, incident runbook</li>
+                            </ul>
+                            <div class="tech-used">
+                                <h3>Technologies Used</h3>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Express</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Redis</span>
+                                    <span class="tech-tag">Docker</span>
+                                    <span class="tech-tag">Terraform</span>
+                                    <span class="tech-tag">AWS</span>
+                                    <span class="tech-tag">GitHub Actions</span>
+                                    <span class="tech-tag">Caddy</span>
+                                </div>
+                            </div>
+                            <p class="project-note">Private company repository.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-featured">
+                    <div class="project-header">
+                        <div>
+                            <h2>Case Management Platform: Enterprise Legal Case Management</h2>
+                            <p class="role-company">Work project · Backend Engineer</p>
+                        </div>
+                        <span class="project-date">Jul – Sep 2026</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-image">
+                            <div class="placeholder-image">Case Management Platform</div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Project Overview</h3>
+                            <p>A multi-tenant platform for managing an enterprise legal department's matters, from intake and allocation to law-firm invoices and legal-cost provisioning. Built by a five-person team; I owned the Matter and Financial backend modules.</p>
+                            <h3>Key Achievements</h3>
+                            <ul>
+                                <li>Matter intake and lifecycle: a 20-stage state machine with branching transitions, matter creation and submission, and an append-only activity timeline</li>
+                                <li>Matter allocation: allocating matters to advisors, conflict checks, and accept/decline flows</li>
+                                <li>Financial modules: provisioning cycles and records (legal-cost exposure and computed provision), and the invoice submit → review → payment lifecycle</li>
+                                <li>Security: Keycloak / OAuth2 JWT authentication, tenant context taken from the verified token, and role-based access with separation of duties (the person who prepares a financial record can't also approve it)</li>
+                                <li>Data layer: PostgreSQL row-level security for tenant isolation, JPA, and Flyway migrations</li>
+                                <li>Architecture and testing: a modular monolith with Spring Modulith (enforced module boundaries), Testcontainers integration tests (including tenant-isolation tests), and HTTP-layer controller tests</li>
+                                <li>Worked to written functional requirements through feature branches and reviewed pull requests</li>
+                            </ul>
+                            <div class="tech-used">
+                                <h3>Technologies Used</h3>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Java 21</span>
+                                    <span class="tech-tag">Spring Boot</span>
+                                    <span class="tech-tag">Spring Modulith</span>
+                                    <span class="tech-tag">Spring Security (OAuth2/JWT)</span>
+                                    <span class="tech-tag">Keycloak</span>
+                                    <span class="tech-tag">JPA/Hibernate</span>
+                                    <span class="tech-tag">PostgreSQL (RLS)</span>
+                                    <span class="tech-tag">Flyway</span>
+                                    <span class="tech-tag">Testcontainers</span>
+                                    <span class="tech-tag">Gradle</span>
+                                </div>
+                            </div>
+                            <p class="project-note">Private company repository.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-featured">
+                    <div class="project-header">
+                        <div>
+                            <h2>Staff Engagement Platform</h2>
+                            <p class="role-company">Work project · Main Developer</p>
+                        </div>
+                        <span class="project-date">Sep – Oct 2026</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-image">
+                            <div class="placeholder-image">Staff Engagement Platform</div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Project Overview</h3>
+                            <p>A gamified engagement platform used live by staff at the company convention.</p>
+                            <h3>Key Achievements</h3>
+                            <ul>
+                                <li>Built the full stack and the deployment as main developer</li>
+                                <li>Game modes: a points ledger and leaderboard, quizzes, a QR scavenger hunt, an awards ballot, and a timed team escape room with seven question types and a live scoreboard</li>
+                                <li>Passwordless email one-time-code sign-in with expiry, attempt limits and hashed storage</li>
+                                <li>Excel and PowerPoint exports of results; survey autosave that survives page closes</li>
+                                <li>Performance: resolved a response-compression issue that cut data transfer by roughly 3×</li>
+                                <li>Operations: custom domain with Let's Encrypt HTTPS, server access only through AWS SSM, nightly backups to S3, and operational safeguards on notifications</li>
+                            </ul>
+                            <div class="tech-used">
+                                <h3>Technologies Used</h3>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Express</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">Docker Compose</span>
+                                    <span class="tech-tag">nginx</span>
+                                    <span class="tech-tag">Caddy</span>
+                                    <span class="tech-tag">AWS (EC2, S3, SSM)</span>
+                                </div>
+                            </div>
+                            <p class="project-note">Private company repository.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-featured">
+                    <div class="project-header">
+                        <div>
+                            <h2>Mandela Day Volunteer App</h2>
+                            <p class="role-company">Work project</p>
+                        </div>
+                        <span class="project-date">Jul 2026</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-image">
+                            <div class="placeholder-image">Volunteer App</div>
+                        </div>
+                        <div class="project-details">
+                            <h3>Project Overview</h3>
+                            <p>A team application for organising Mandela Day activities, with task assignment, status updates and transactional email (Brevo), built on Supabase.</p>
+                            <div class="tech-used">
+                                <h3>Technologies Used</h3>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Supabase</span>
+                                    <span class="tech-tag">Brevo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-featured">
+                    <div class="project-header">
+                        <div>
+                            <h2>Antonio Artworks: Full-Stack E-Commerce Platform</h2>
+                            <p class="role-company">Client project · Sole developer</p>
+                        </div>
                         <span class="project-date">2026</span>
                     </div>
                     <div class="project-content">
                         <div class="project-image">
-                            <img src="images/antonio-artwork-sample1.png" class="placeholder-image" alt="AI Traffic Project Visualization">
+                            <img src="images/antonio-artwork-sample1.png" class="placeholder-image" alt="Antonio Artworks home page showing the artwork gallery" loading="lazy">
                         </div>
                         <div class="project-details">
                             <h3>Project Overview</h3>
-                            <p>Production e-commerce website for a South African visual artist. Customers can browse artworks, add to cart, pay securely via PayFast, and request custom commissions with photo uploads. Admin dashboard for the artist to manage orders, gallery, and messages.</p>
-                            
+                            <p>Production e-commerce website for a South African visual artist. Customers can browse and buy artworks, pay securely via PayFast, and request custom commissions with photo uploads. The artist manages orders, the gallery, commissions and messages from an admin dashboard.</p>
+
                             <h3>Key Achievements</h3>
                             <ul>
-                                <li>Built with Node.js, Express, PostgreSQL, and Supabase (database + image CDN)</li>
-                                <li>Migrated database from Render PostgreSQL to Supabase - eliminated 90-day expiry</li>
-                                <li>Replaced base64 images with CDN - reduced load time by 80%</li>
-                                <li>Implemented JWT authentication, email verification, and account lockout</li>
+                                <li>Frontend on Cloudflare Pages; Node.js/Express API running on a Cloudflare Worker, connected to Supabase PostgreSQL through Hyperdrive</li>
+                                <li>Migrated hosting from Render to Cloudflare, and moved the database and image storage to a new Supabase project</li>
+                                <li>Supabase Auth for registration, sign-in, email verification and password reset, replacing a custom JWT setup</li>
+                                <li>PayFast payments, including commission invoices paid as a 50% deposit and a balance</li>
+                                <li>Images served from Supabase Storage instead of base64 in the database, significantly reducing page load time</li>
+                                <li>Transactional emails (Brevo) for orders and commissions; admin data exports</li>
+                                <li>Security review before go-live, with the findings fixed</li>
                                 <li>SEO optimisation (sitemap, robots.txt, Google Search Console)</li>
-                                <li>Deployed on Render with Cloudflare CDN and custom domain</li>
                             </ul>
-                            
+
                             <div class="tech-used">
                                 <h3>Technologies Used</h3>
                                 <div class="tech-tags">
@@ -69,12 +257,13 @@
                                     <span class="tech-tag">Express</span>
                                     <span class="tech-tag">PostgreSQL</span>
                                     <span class="tech-tag">Supabase</span>
-                                    <span class="tech-tag">PayFast API</span>
-                                    <span class="tech-tag">Cloudflare</span>
-                                    <span class="tech-tag">Render</span>
+                                    <span class="tech-tag">Cloudflare Workers</span>
+                                    <span class="tech-tag">Cloudflare Pages</span>
+                                    <span class="tech-tag">PayFast</span>
+                                    <span class="tech-tag">Brevo</span>
                                 </div>
                             </div>
-                            
+
                             <div class="project-links">
                                 <a href="https://antonioartworks.co.za" class="btn btn-primary" target="_blank">View Live Site</a>
                             </div>
@@ -82,38 +271,62 @@
                     </div>
                 </div>
 
-
                 <div class="project-featured">
                     <div class="project-header">
-                        <h2>AI Traffic & Delivery Optimization</h2>
-                        <span class="project-date">2025</span>
+                        <div>
+                            <h2>Helix: GPT-Style Language Model from Scratch</h2>
+                            <p class="role-company">Personal project · Learning how LLMs work</p>
+                        </div>
+                        <span class="project-date">2026</span>
                     </div>
                     <div class="project-content">
                         <div class="project-image">
-                            <img src="images/ai-traffic-and-delivery-optimization-sample1.png" class="placeholder-image" alt="AI Traffic Project Visualization">
+                            <div class="placeholder-image">Helix Language Model</div>
                         </div>
                         <div class="project-details">
                             <h3>Project Overview</h3>
-                            <p>Designed and architected an intelligent routing system that leverages artificial intelligence and real-time traffic data to optimize delivery routes, improving efficiency and reducing operational delays.</p>
-                            
+                            <p>A small transformer language model trained from scratch in PyTorch. The architecture is adapted from Andrej Karpathy's <a href="https://github.com/karpathy/nanoGPT" target="_blank" rel="noopener">nanoGPT</a>, and the project was built with the help of AI coding assistants. All weights are trained from random initialisation on my own text data.</p>
                             <h3>Key Achievements</h3>
                             <ul>
-                                <li>Developed algorithms for efficient route optimization</li>
-                                <li>Integrated AI concepts for predictive routing</li>
-                                <li>Achieved 35% improvement in route efficiency through data analysis</li>
-                                <li>Designed scalable system architecture</li>
+                                <li>Decoder-only transformer: causal self-attention, feed-forward blocks, and weight-tied embeddings</li>
+                                <li>BPE tokenisation with the GPT-2 vocabulary (tiktoken)</li>
+                                <li>Configurable model sizes (small to XL presets) with batch sizing that adapts to CPU or GPU</li>
+                                <li>GPU training on an NVIDIA RTX (CUDA)</li>
+                                <li>Command-line modes to train, generate text and continue a prompt interactively, with temperature and top-k sampling</li>
                             </ul>
-                            
                             <div class="tech-used">
                                 <h3>Technologies Used</h3>
                                 <div class="tech-tags">
                                     <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">AI/ML Algorithms</span>
-                                    <span class="tech-tag">Data Analysis</span>
-                                    <span class="tech-tag">System Design</span>
+                                    <span class="tech-tag">PyTorch</span>
+                                    <span class="tech-tag">CUDA</span>
+                                    <span class="tech-tag">tiktoken</span>
                                 </div>
                             </div>
-                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-heading" id="earlier-work">Earlier Work</h2>
+            <div class="earlier-grid">
+                <div class="project-featured text-only compact">
+                    <div class="project-header">
+                        <h2>AI Traffic &amp; Delivery Optimisation</h2>
+                        <span class="project-date">2025</span>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-image">
+                            <img src="images/ai-traffic-and-delivery-optimization-sample1.png" class="placeholder-image" alt="AI traffic and delivery optimisation project code" loading="lazy">
+                        </div>
+                        <div class="project-details">
+                            <p>Academic team project (8 members): a proposal for an AI-assisted delivery-routing system for Gauteng, with a Python prototype that simulates traffic detection, incident checks, GPS route monitoring and travel-time estimates on a Gauteng roads dataset, plus a simple driver chatbot.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">pandas</span>
+                                <span class="tech-tag">NumPy</span>
+                                <span class="tech-tag">Matplotlib</span>
+                            </div>
                             <div class="project-links">
                                 <a href="https://github.com/princesbgp/Smart-Traffic-Optimization-Gauteng-STOG-" class="btn btn-primary" target="_blank">View on GitHub</a>
                             </div>
@@ -121,39 +334,23 @@
                     </div>
                 </div>
 
-                <div class="project-featured">
+                <div class="project-featured text-only compact">
                     <div class="project-header">
-                        <h2>Donut Store POS Web Application</h2>
+                        <h2>Mr Creamy Donut POS Web Application</h2>
                         <span class="project-date">2025</span>
                     </div>
                     <div class="project-content">
                         <div class="project-image">
-                            <img src="images/mr-creamy-donut-sample1.png" class="placeholder-image" alt="POS System Interface">
+                            <img src="images/mr-creamy-donut-sample1.png" class="placeholder-image" alt="Mr Creamy Donut point-of-sale interface" loading="lazy">
                         </div>
                         <div class="project-details">
-                            <h3>Project Overview</h3>
-                            <p>Full-stack point-of-sale system built from scratch with comprehensive inventory management, sales tracking, and business analytics capabilities.</p>
-                            
-                            <h3>Key Features</h3>
-                            <ul>
-                                <li>Real-time inventory tracking and management</li>
-                                <li>Sales transaction processing and reporting</li>
-                                <li>User-friendly interface for business operations</li>
-                                <li>Database integration for data persistence</li>
-                                <li>Business analytics and sales insights</li>
-                            </ul>
-                            
-                            <div class="tech-used">
-                                <h3>Technologies Used</h3>
-                                <div class="tech-tags">
-                                    <span class="tech-tag">PHP</span>
-                                    <span class="tech-tag">JavaScript</span>
-                                    <span class="tech-tag">SQL</span>
-                                    <span class="tech-tag">HTML/CSS</span>
-                                    <span class="tech-tag">Database Design</span>
-                                </div>
+                            <p>Full-stack point-of-sale system with inventory management, sales transaction processing and reporting, and sales analytics.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">HTML/CSS</span>
                             </div>
-                            
                             <div class="project-links">
                                 <a href="https://github.com/peekaycoding/mr-creamy-donut" class="btn btn-primary" target="_blank">View on GitHub</a>
                             </div>
@@ -161,7 +358,7 @@
                     </div>
                 </div>
 
-                <div class="project-featured">
+                <div class="project-featured text-only compact">
                     <div class="project-header">
                         <h2>PC Diagnostic Tool</h2>
                         <span class="project-date">2023</span>
@@ -171,63 +368,22 @@
                             <div class="placeholder-image">Diagnostic Tool Interface</div>
                         </div>
                         <div class="project-details">
-                            <h3>Project Overview</h3>
-                            <p>Automated diagnostic tool that proactively identifies system issues, performs comprehensive health checks, and suggests solutions for common PC problems.</p>
-                            
-                            <h3>Key Features</h3>
-                            <ul>
-                                <li>Automated system health monitoring</li>
-                                <li>Proactive issue detection and diagnosis</li>
-                                <li>Intelligent solution recommendations</li>
-                                <li>Preventive maintenance alerts</li>
-                                <li>User-friendly reporting interface</li>
-                            </ul>
-                            
-                            <div class="tech-used">
-                                <h3>Technologies Used</h3>
-                                <div class="tech-tags">
-                                    <span class="tech-tag">Python</span>
-                                    <span class="tech-tag">System Diagnostics</span>
-                                    <span class="tech-tag">Automation Scripting</span>
-                                    <span class="tech-tag">System APIs</span>
-                                </div>
-                            </div>
-                            
-                            <div class="project-links">
-                                <a href="https://github.com/peekaycoding" class="btn btn-primary" target="_blank">View on GitHub</a>
+                            <p>A Python tool that runs system health checks, detects common PC problems and suggests fixes.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Automation Scripting</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="technical-experience">
-                <h2>Technical Competencies</h2>
-                <div class="competencies-grid">
-                    <div class="competency-item">
-                        <h3>Problem Solving</h3>
-                        <p>Strong analytical skills with ability to break down complex problems and develop effective solutions</p>
-                    </div>
-                    <div class="competency-item">
-                        <h3>Project Development</h3>
-                        <p>Experience in full project lifecycle from concept to implementation and testing</p>
-                    </div>
-                    <div class="competency-item">
-                        <h3>Technical Adaptability</h3>
-                        <p>Quick to learn new technologies and adapt to different project requirements</p>
-                    </div>
-                    <div class="competency-item">
-                        <h3>Quality Focus</h3>
-                        <p>Commitment to writing clean, maintainable, and well-documented code</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Pakiso Mokhethi. All rights reserved.</p>
+            <p>&copy; <span class="current-year">2026</span> Pakiso Mokhethi. All rights reserved.</p>
             <div class="social-links">
                 <a href="https://github.com/peekaycoding" target="_blank">GitHub</a>
                 <a href="https://linkedin.com/in/pakiso-mokhethi" target="_blank">LinkedIn</a>

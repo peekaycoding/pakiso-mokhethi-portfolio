@@ -949,6 +949,81 @@ body {
     font-size: 0.875rem;
 }
 
+/* Section headings and work-experience role card */
+.section-heading {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+    scroll-margin-top: 90px;
+}
+
+.work-role .project-content,
+.text-only .project-content {
+    grid-template-columns: 1fr;
+}
+
+.project-header h2:has(+ .role-company) {
+    margin-bottom: 0.25rem;
+}
+
+.role-company {
+    margin: 0;
+    opacity: 0.9;
+}
+
+.work-role .project-details ul,
+.text-only .project-details ul {
+    list-style-position: outside;
+    padding-left: 1.25rem;
+}
+
+.work-role .project-details ul {
+    margin-bottom: 0;
+}
+
+.work-role .project-details li,
+.text-only .project-details li {
+    margin-bottom: 0.875rem;
+}
+
+.work-role .project-details strong {
+    color: var(--text-dark);
+}
+
+.project-details a:not(.btn) {
+    color: var(--primary-color);
+}
+
+.project-details .project-note {
+    margin: 1rem 0 0;
+    font-size: 0.875rem;
+    font-style: italic;
+}
+
+/* Earlier work: smaller cards, two per row */
+.earlier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.compact .project-header {
+    padding: 1rem 1.5rem;
+}
+
+.compact .project-header h2 {
+    font-size: 1.2rem;
+}
+
+.compact .project-content {
+    padding: 1.5rem;
+}
+
+.compact .project-links {
+    margin-top: 1.5rem;
+}
+
 /* Mobile responsive for experience section */
 @media (max-width: 768px) {
     .project-content {
