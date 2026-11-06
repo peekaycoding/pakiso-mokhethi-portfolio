@@ -852,20 +852,9 @@ body {
     padding: 1rem;
 }
 
-/* Work experience: office picture in the same padded frame as the
-   project screenshots, cropped to fit rather than stretched */
-.project-image.role-image img {
-    object-fit: cover;
-}
-
-/* Work experience: picture on top, bullets underneath */
+/* Work experience: bullets at full width */
 .work-role .project-content {
     grid-template-columns: 1fr;
-}
-
-.project-image.role-image {
-    max-width: 560px;
-    margin: 0 auto;
 }
 
 /* Real images inside project-image */
